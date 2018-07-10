@@ -7,7 +7,7 @@ def oxford_comma(array)
     cont = array[0..1]
     cont.join(", ") << ", and #{array[-1]}"
   else 
-    cont = array[0...array.length - 1]
+    cont = array[0...array.length]
     cont.join(", ") << ", and #{array[-1]}"
   end
     
